@@ -34,46 +34,31 @@
             class="collapse navbar-collapse justify-content-end pe-5"
             id="navbarNav"
           >
-            <ul class="navbar-nav mb-2 mb-lg-0 text-light text-uppercase">
+            <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
               <li class="nav-item px-3">
                 <a class="nav-link active" aria-current="page" href="#"
-                  ><h5 class="text-light">Accueil</h5></a
+                  >Accueil</a
                 >
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#"
-                  ><h5 class="text-light">Services</h5></a
-                >
+                <a class="nav-link" href="./services.html">Services</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#"
-                  ><h5 class="text-light">Réalisations</h5></a
-                >
+                <a class="nav-link" href="#">Réalisations</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#"
-                  ><h5 class="text-light">Blog</h5></a
-                >
+                <a class="nav-link" href="#">Blog</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#"
-                  ><h5 class="text-light">Me contacter</h5></a
-                >
+                <a class="nav-link" href="#">Me contacter</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main>
+    <main class="pb-3">
       <section class="position-relative">
-        <div
-          class="position-absolute top-50 start-50 translate-middle text-center"
-        >
-          <h1 class="text-white mb-4">Bonjour, je suis John Doe</h1>
-          <h2 class="text-white mb-4">Développeur web full-stack</h2>
-          <button class="btn btn-primary fs-4">En savoir plus</button>
-        </div>
         <picture>
           <img
             src="./images/hero-bg-mobile.jpg"
@@ -91,9 +76,17 @@
             class="img-fluid d-none d-md-none d-lg-block"
           />
         </picture>
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div
+          class="position-absolute top-50 start-50 translate-middle text-center"
+        >
+          <h1 class="text-white mb-4">Bonjour, je suis John Doe</h1>
+          <h2 class="text-white mb-4">Développeur web full-stack</h2>
+          <button class="btn btn-primary fs-4">En savoir plus</button>
+        </div>
       </section>
       <section class="container-fluid">
-        <div class="row row-cols-1 row-cols-md-2 rounded-1 shadow m-4">
+        <div class="row row-cols-1 row-cols-md-2 rounded-1 shadow m-5">
           <div class="col-12 col-md-6 p-4">
             <h3 class="border-bottom border-primary border-2 p-2">
               &Agrave; propos
@@ -188,7 +181,7 @@
         </div>
       </section>
     </main>
-    <footer class="container-fluid bg-dark bg-opacity-25">
+    <footer class="container-fluid bg-dark bg-opacity-10 mt-5">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
         <div class="col-12 col-sm-6 col-lg-3 p-4">
           <h4>John Doe</h4>
@@ -215,54 +208,54 @@
         <div class="col-12 col-sm-6 col-lg-3 p-4">
           <h4>Liens utiles</h4>
           <div>
-            <i class="fa-solid fa-chevron-right text-primary fw600 me-1"></i
+            <i class="fa-solid fa-chevron-right fa-sm text-primary me-1"></i
             ><a href="" class="text-reset">Accueil</a>
           </div>
           <div>
-            <i class="fa-solid fa-chevron-right text-primary fw600 me-1"></i
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
             ><a href="" class="text-reset">&Agrave; propos</a>
           </div>
           <div>
-            <i class="fa-solid fa-chevron-right text-primary fw600 me-1"></i
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
             ><a href="" class="text-reset">Services</a>
           </div>
           <div>
-            <i class="fa-solid fa-chevron-right text-primary fw600 me-1"></i
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
             ><a href="" class="text-reset">Me contacter</a>
           </div>
           <div>
-            <i class="fa-solid fa-chevron-right text-primary fw600 me-1"></i
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
             ><a href="" class="text-reset">Mentions légales</a>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 p-4">
           <h4>Mes dernières réalisations</h4>
           <div>
-            <i class="fa-solid fa-chevron-right text-primary fw600 me-1"></i
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
             ><a href="" class="text-reset">Fresh food</a>
           </div>
           <div>
-            <i class="fa-solid fa-chevron-right text-primary fw600 me-1"></i
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
             ><a href="" class="text-reset">Restaurant Akira</a>
           </div>
           <div>
-            <i class="fa-solid fa-chevron-right text-primary fw600 me-1"></i
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
             ><a href="" class="text-reset">Espace bien-être</a>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 p-4">
           <h4>Mes derniers articles</h4>
           <div>
-            <i class="fa-solid fa-chevron-right text-primary fw600 me-1"></i
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
             ><a href="" class="text-reset">Coder son site en HTML/CSS</a>
           </div>
           <div>
-            <i class="fa-solid fa-chevron-right text-primary fw600 me-1"></i
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
             ><a href="" class="text-reset">Vendre ses produits sur le web</a>
           </div>
           <div>
-            <i class="fa-solid fa-chevron-right text-primary fw600 me-1"></i
-            ><a href="" class="text-reset">Se positionner sur google</a>
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
+            ><a href="" class="text-reset">Se positionner sur Google</a>
           </div>
         </div>
       </div>
@@ -272,4 +265,9 @@
       <div class="row py-2"></div>
     </footer>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
 </html>

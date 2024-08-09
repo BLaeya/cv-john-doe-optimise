@@ -11844,5 +11844,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+a {
+  text-decoration: none;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 /*# sourceMappingURL=style.css.map */
