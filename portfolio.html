@@ -14,7 +14,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1 ps-5">
         <div class="container-fluid">
-          <a href="#" class="navbar-brand">
+          <a href="./index.html" class="navbar-brand">
             <h2 class="navbar-text text-uppercase fw-600 text-light">
               John <span class="bg-primary bg-gradient rounded-3 p-1">Doe</span>
             </h2>
@@ -36,37 +36,111 @@
           >
             <ul class="navbar-nav mb-2 mb-lg-0 text-light text-uppercase">
               <li class="nav-item px-3">
-                <a class="nav-link active" aria-current="page" href="#"
-                  ><h5 class="text-light">Accueil</h5></a
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Accueil</a
                 >
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#"
-                  ><h5 class="text-light">Services</h5></a
-                >
+                <a class="nav-link" href="./services.html">Services</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#"
-                  ><h5 class="text-light">Réalisations</h5></a
-                >
+                <a class="nav-link active" href="#">Réalisations</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#"
-                  ><h5 class="text-light">Blog</h5></a
-                >
+                <a class="nav-link" href="#">Blog</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#"
-                  ><h5 class="text-light">Me contacter</h5></a
-                >
+                <a class="nav-link" href="#">Me contacter</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer class="container-fluid bg-dark bg-opacity-100">
+    <main>
+      <picture>
+        <img
+          src="./images/banner-mobile.jpg"
+          alt="bannière mobile"
+          class="img-fluid d-md-none d-lg-none"
+        />
+        <img
+          src="./images/banner-tablette.jpg"
+          alt="bannière tablette"
+          class="img-fluid d-none d-md-block d-lg-none"
+        />
+        <img
+          src="./images/banner.jpg"
+          alt="bannière"
+          class="img-fluid d-none d-md-none d-lg-block"
+        />
+      </picture>
+      <section class="text-center">
+        <div class="row">
+          <h2 class="text-uppercase pt-5">Portfolio</h2>
+          <p class="">Voici quelques-unes de mes réalisations.</p>
+        </div>
+        <div class="row pb-5">
+          <div class="col-4 col-sm-5 py-1"></div>
+          <div class="col-4 col-sm-2 p-1 bg-primary"></div>
+          <div class="col-4 col-sm-5 py-1"></div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 p-5">
+          <div class="col">
+            <div class="card">
+              <img src="./images/portfolio/fresh-food.jpg" alt="Fresh-food" />
+              <div class="card-body">
+                <h3 class="card-title">Fresh food</h3>
+                <p class="card-text px-3 pb-1">
+                  Réalisation d'un site avec commande en ligne.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Voir</a>
+              </div>
+              <div class="card-footer bg-dark bg-opacity-10 mt-4">
+                <p class="m-0">Site réalisé avec PHP et mySQL</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./images/portfolio/restaurant-japonais.jpg"
+                alt="Restaurant-Akira"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Restaurant Akira</h3>
+                <p class="card-text px-3 pb-1">
+                  Réalisation d'un site vitrine.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Voir</a>
+              </div>
+              <div class="card-footer bg-dark bg-opacity-10 mt-4">
+                <p class="m-0">Site réalisé avec WordPress</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./images/portfolio/espace-bien-etre.jpg"
+                alt="Espace bien-être"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Espace bien-être</h3>
+                <p class="card-text px-3 pb-1">
+                  Réalisation d'un site vitrine pour un praticien de bien-être.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Voir</a>
+              </div>
+              <div class="card-footer border bg-dark bg-opacity-10 mt-4">
+                <p class="m-0">Site réalisé en HTML/CSS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid bg-dark bg-opacity-10">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
         <div class="col-12 col-sm-6 col-lg-3 p-4">
           <h4>John Doe</h4>
