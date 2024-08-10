@@ -10,11 +10,11 @@
     ></script>
     <title>CV - portfolio John DOE</title>
   </head>
-  <body>
+  <body class="d-flex flex-column">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1 ps-5">
         <div class="container-fluid">
-          <a href="#" class="navbar-brand">
+          <a href="./index.html" class="navbar-brand">
             <h2 class="navbar-text text-uppercase fw-600 text-light">
               John <span class="bg-primary bg-gradient rounded-3 p-1">Doe</span>
             </h2>
@@ -36,29 +36,96 @@
           >
             <ul class="navbar-nav mb-2 mb-lg-0 text-light text-uppercase">
               <li class="nav-item px-3">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link" aria-current="page" href="./index.html"
                   >Accueil</a
                 >
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="./services.html">Services</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">Réalisations</a>
+                <a class="nav-link" href="./portfolio.html">Réalisations</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="./blog.html">Blog</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">Me contacter</a>
+                <a class="nav-link active" href="#">Me contacter</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer class="container-fluid bg-dark bg-opacity-100">
+    <main>
+      <div class="position-relative">
+        <picture>
+          <img
+            src="./images/contact-bg.jpg"
+            alt="fond contact"
+            class="img-fluid"
+          />
+        </picture>
+        <div
+          class="overlay-contact position-absolute top-0 start-0 w-100 h-100"
+        >
+          <div class="container bg-light rounded-1 mt-2">
+            <div class="row text-center">
+              <h2 class="text-uppercase pt-5">Me contacter</h2>
+              <p class="px-5">
+                Pour me contacter en vue d'un entretien ou d'une future
+                collaboration, merci de remplir le formulaire de contact.
+              </p>
+            </div>
+            <div class="row pb-5">
+              <div class="col-4 col-sm-5 py-1"></div>
+              <div class="col-4 col-sm-2 p-1 bg-primary"></div>
+              <div class="col-4 col-sm-5 py-1"></div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2">
+              <div class="col-12 col-md-6">
+                <h3 class="border-bottom border-primary border-2 pb-2">
+                  Formulaire de contact
+                </h3>
+                <form>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Votre nom"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Votre adresse email"
+                  />
+                  <input
+                    type="tel"
+                    name="telephone"
+                    id="telephone"
+                    placeholder="Votre numéro de téléphone"
+                  />
+                  <input
+                    type="text"
+                    name="sujet"
+                    id="sujet"
+                    placeholder="Sujet"
+                  />
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Votre message"
+                  ></textarea>
+                  <button type="button" class="btn btn-primary">Envoyer</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid bg-dark bg-opacity-10">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
         <div class="col-12 col-sm-6 col-lg-3 p-4">
           <h4>John Doe</h4>
