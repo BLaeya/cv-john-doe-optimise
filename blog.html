@@ -14,8 +14,8 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1 ps-5">
         <div class="container-fluid">
-          <a href="#" class="navbar-brand">
-            <h2 class="navbar-text text-uppercase fw-600 text-light">
+          <a href="./index.html" class="navbar-brand">
+            <h2 class="navbar-text text-uppercase text-light">
               John <span class="bg-primary bg-gradient rounded-3 p-1">Doe</span>
             </h2>
           </a>
@@ -36,18 +36,18 @@
           >
             <ul class="navbar-nav mb-2 mb-lg-0 text-light text-uppercase">
               <li class="nav-item px-3">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link" aria-current="page" href="./index.html"
                   >Accueil</a
                 >
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="./services.html">Services</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">Réalisations</a>
+                <a class="nav-link" href="./portfolio.html">Réalisations</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link active" href="#">Blog</a>
               </li>
               <li class="nav-item px-3">
                 <a class="nav-link" href="#">Me contacter</a>
@@ -57,8 +57,143 @@
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer class="container-fluid bg-dark bg-opacity-100">
+    <main class="pb-4">
+      <picture>
+        <img
+          src="./images/banner-mobile.jpg"
+          alt="bannière mobile"
+          class="img-fluid d-md-none d-lg-none"
+        />
+        <img
+          src="./images/banner-tablette.jpg"
+          alt="bannière tablette"
+          class="img-fluid d-none d-md-block d-lg-none"
+        />
+        <img
+          src="./images/banner.jpg"
+          alt="bannière"
+          class="img-fluid d-none d-md-none d-lg-block"
+        />
+      </picture>
+      <section>
+        <div class="row text-center">
+          <h2 class="text-uppercase pt-5">Blog</h2>
+          <p class="">
+            Retrouver ici quelques articles sur le développement web.
+          </p>
+        </div>
+        <div class="row pb-2">
+          <div class="col-4 col-sm-5 py-1"></div>
+          <div class="col-4 col-sm-2 p-1 bg-primary"></div>
+          <div class="col-4 col-sm-5 py-1"></div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-5">
+          <div class="col">
+            <div class="card h-100">
+              <img src="./images/blog/coder.jpg" alt="Coder" />
+              <div class="card-body">
+                <h3 class="card-title">Coder son site en HTML/CSS</h3>
+                <p class="card-text pb-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  velit voluptates quia! Nobis, soluta praesentium!
+                </p>
+                <a href="#" class="btn btn-primary">Lire la suite</a>
+              </div>
+              <div class="card-footer bg-dark bg-opacity-10">
+                <p class="m-0">Publié le 22 juilet 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./images/blog/croissance.jpg"
+                alt="Vendre ses produits sur le web"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Vendre ses produits sur le web</h3>
+                <p class="card-text pb-1">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Dolor pariatur corporis corrupti adipisci minus fugit.
+                </p>
+                <a href="#" class="btn btn-primary">Lire la suite</a>
+              </div>
+              <div class="card-footer bg-dark bg-opacity-10">
+                <p class="m-0">Publié le 20 juillet 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./images/blog/google.jpg"
+                alt="se positionner sur google"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Se positionner sur Google</h3>
+                <p class="card-text pb-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                  veniam illum ut obcaecati eos cupiditate!
+                </p>
+                <a href="#" class="btn btn-primary">Lire la suite</a>
+              </div>
+              <div class="card-footer border bg-dark bg-opacity-10">
+                <p class="m-0">Publié le 1 août 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./images/blog/screens.jpg" alt="Coder en responsive" />
+              <div class="card-body">
+                <h3 class="card-title">Coder en responsive design</h3>
+                <p class="card-text pb-1">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corrupti sint, possimus cum et quo molestiae.
+                </p>
+                <a href="#" class="btn btn-primary">Lire la suite</a>
+              </div>
+              <div class="card-footer bg-dark bg-opacity-10">
+                <p class="m-0">Publié le 30 juillet 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./images/blog/seo.jpg" alt="SEO" />
+              <div class="card-body">
+                <h3 class="card-title">Techniques de référencement</h3>
+                <p class="card-text pb-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem, molestiae totam recusandae adipisci dolores culpa?
+                </p>
+                <a href="#" class="btn btn-primary">Lire la suite</a>
+              </div>
+              <div class="card-footer bg-dark bg-opacity-10">
+                <p class="m-0">Publié le 16 juillet 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./images/blog/technos.png" alt="Apprendre à coder" />
+              <div class="card-body">
+                <h3 class="card-title">Apprendre à coder</h3>
+                <p class="card-text pb-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia officia accusantium eum. Quia, nemo fugiat?
+                </p>
+                <a href="#" class="btn btn-primary">Lire la suite</a>
+              </div>
+              <div class="card-footer bg-dark bg-opacity-10">
+                <p class="m-0">Publié le 12 juillet 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid bg-dark bg-opacity-10">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
         <div class="col-12 col-sm-6 col-lg-3 p-4">
           <h4>John Doe</h4>
