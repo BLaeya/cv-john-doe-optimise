@@ -11856,4 +11856,8 @@ a {
   background-color: rgba(0, 105, 255, 0.5);
 }
 
+.ratio-4x3 {
+  max-height: 270px;
+}
+
 /*# sourceMappingURL=style.css.map */
