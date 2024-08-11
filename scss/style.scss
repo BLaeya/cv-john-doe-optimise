@@ -1,9 +1,35 @@
+@import "variables_overrides.scss";
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 a {
   text-decoration: none;
 }
 
+body {
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1e1e1e;
+}
+strong {
+  color: black;
+}
+
+.navbar-text a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.services:hover {
+  i {
+    color: #cde1f8;
+  }
+}
 .overlay {
   background-color: rgba(0, 0, 0, 0.3);
 }
