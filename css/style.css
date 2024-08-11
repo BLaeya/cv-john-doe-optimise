@@ -11853,11 +11853,30 @@ a {
 }
 
 .overlay-contact {
+  background-image: url(../images/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.overlay-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 105, 255, 0.5);
+  z-index: 1;
 }
 
-.ratio-4x3 {
-  max-height: 270px;
+.contact {
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .ratio-4x3 {
+    max-height: 270px; /* Ajustez cette valeur selon vos besoins */
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
