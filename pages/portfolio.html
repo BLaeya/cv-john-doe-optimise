@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <script
       src="https://kit.fontawesome.com/5aa7664434.js"
       crossorigin="anonymous"
@@ -20,7 +25,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1 ps-5">
         <div class="container-fluid">
-          <a href="./index.html" class="navbar-brand">
+          <a href="../index.html" class="navbar-brand">
             <h2 class="navbar-text text-uppercase fw-600 text-light">
               John <span class="bg-primary bg-gradient rounded-3 p-1">Doe</span>
             </h2>
@@ -42,7 +47,7 @@
           >
             <ul class="navbar-nav mb-2 mb-lg-0 text-light text-uppercase">
               <li class="nav-item px-3">
-                <a class="nav-link" aria-current="page" href="./index.html"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   >Accueil</a
                 >
               </li>
@@ -53,10 +58,10 @@
                 <a class="nav-link active" href="#">Réalisations</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="./blog.html">Blog</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">Me contacter</a>
+                <a class="nav-link" href="./contact.html">Me contacter</a>
               </li>
             </ul>
           </div>
@@ -66,17 +71,17 @@
     <main>
       <picture>
         <img
-          src="./images/banner-mobile.jpg"
+          src="../images/banner-mobile.jpg"
           alt="bannière mobile"
           class="img-fluid d-md-none d-lg-none"
         />
         <img
-          src="./images/banner-tablette.jpg"
+          src="../images/banner-tablette.jpg"
           alt="bannière tablette"
           class="img-fluid d-none d-md-block d-lg-none"
         />
         <img
-          src="./images/banner.jpg"
+          src="../images/banner.jpg"
           alt="bannière"
           class="img-fluid d-none d-md-none d-lg-block"
         />
@@ -91,10 +96,10 @@
           <div class="col-4 col-sm-2 p-1 bg-primary"></div>
           <div class="col-4 col-sm-5 py-1"></div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row_cols_lg-3 p-5">
+        <div class="row row-cols-1 row-cols-md-2 row_cols_lg-3 g-4 p-5">
           <div class="col">
-            <div class="card">
-              <img src="./images/portfolio/fresh-food.jpg" alt="Fresh-food" />
+            <div class="card" id="freshfood">
+              <img src="../images/portfolio/fresh-food.jpg" alt="Fresh-food" />
               <div class="card-body">
                 <h3 class="card-title">Fresh food</h3>
                 <p class="card-text px-3 pb-1">
@@ -108,9 +113,9 @@
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card" id="akira">
               <img
-                src="./images/portfolio/restaurant-japonais.jpg"
+                src="../images/portfolio/restaurant-japonais.jpg"
                 alt="Restaurant-Akira"
               />
               <div class="card-body">
@@ -126,9 +131,9 @@
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card" id="espace">
               <img
-                src="./images/portfolio/espace-bien-etre.jpg"
+                src="../images/portfolio/espace-bien-etre.jpg"
                 alt="Espace bien-être"
               />
               <div class="card-body">
@@ -158,13 +163,25 @@
           >
           <div class="row mt-2">
             <div class="d-flex align-items-center">
-              <a href="" class="mx-2 text-reset"
+              <a
+                href="https://github.com/github-john-doe"
+                class="mx-2 text-reset"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fa-brands fa-github fa-xl"></i
               ></a>
-              <a href="" class="mx-2 text-reset"
+              <a
+                href="https://x.com/github-john-doe"
+                class="mx-2 text-reset"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fa-brands fa-x-twitter fa-xl"></i
               ></a>
-              <a href="" class="mx-2 text-reset"
+              <a
+                href="https://linkedin.com/in/github-john-doe"
+                class="mx-2 text-reset"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fa-brands fa-linkedin fa-xl"></i
               ></a>
             </div>
@@ -174,53 +191,67 @@
           <h4>Liens utiles</h4>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Accueil</a>
+            ><a href="../index.html" class="text-reset">Accueil</a>
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">&Agrave; propos</a>
+            ><a href="../index.html#about" class="text-reset"
+              >&Agrave; propos</a
+            >
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Services</a>
+            ><a href="./services.html" class="text-reset">Services</a>
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Me contacter</a>
+            ><a href="./contact.html" class="text-reset">Me contacter</a>
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Mentions légales</a>
+            ><a href="./legal.html" class="text-reset">Mentions légales</a>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 p-4">
           <h4>Mes dernières réalisations</h4>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Fresh food</a>
+            ><a href="./portfolio.html#freshfood" class="text-reset"
+              >Fresh food</a
+            >
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Restaurant Akira</a>
+            ><a href="./portfolio.html#akira" class="text-reset"
+              >Restaurant Akira</a
+            >
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Espace bien-être</a>
+            ><a href="./portfolio.html#espace" class="text-reset"
+              >Espace bien-être</a
+            >
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 p-4">
           <h4>Mes derniers articles</h4>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Coder son site en HTML/CSS</a>
+            ><a href="./blog.html#coder" class="text-reset"
+              >Coder son site en HTML/CSS</a
+            >
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Vendre ses produits sur le web</a>
+            ><a href="./blog.html#croissance" class="text-reset"
+              >Vendre ses produits sur le web</a
+            >
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Se positionner sur Google</a>
+            ><a href="./blog.html#google" class="text-reset"
+              >Se positionner sur Google</a
+            >
           </div>
         </div>
       </div>

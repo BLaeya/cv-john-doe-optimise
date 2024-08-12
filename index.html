@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/5aa7664434.js"
@@ -47,16 +48,18 @@
                 >
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="./services.html">Services</a>
+                <a class="nav-link" href="./pages/services.html">Services</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="./portfolio.html">Réalisations</a>
+                <a class="nav-link" href="./pages/portfolio.html"
+                  >Réalisations</a
+                >
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="./blog.html">Blog</a>
+                <a class="nav-link" href="./pages/blog.html">Blog</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="./contact.html">Me contacter</a>
+                <a class="nav-link" href="./pages/contact.html">Me contacter</a>
               </li>
             </ul>
           </div>
@@ -94,7 +97,7 @@
       <section class="container-fluid">
         <div class="row row-cols-1 row-cols-md-2 rounded-1 shadow m-5">
           <div class="col-12 col-md-6 p-4">
-            <h3 class="border-bottom border-primary border-2 p-2">
+            <h3 class="border-bottom border-primary border-2 p-2" id="about">
               &Agrave; propos
             </h3>
             <p>
@@ -199,13 +202,25 @@
           >
           <div class="row mt-2">
             <div class="d-flex align-items-center">
-              <a href="" class="mx-2 text-reset"
+              <a
+                href="https://github.com/github-john-doe"
+                class="mx-2 text-reset"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fa-brands fa-github fa-xl"></i
               ></a>
-              <a href="" class="mx-2 text-reset"
+              <a
+                href="https://x.com/github-john-doe"
+                class="mx-2 text-reset"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fa-brands fa-x-twitter fa-xl"></i
               ></a>
-              <a href="" class="mx-2 text-reset"
+              <a
+                href="https://linkedin.com/in/github-john-doe"
+                class="mx-2 text-reset"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fa-brands fa-linkedin fa-xl"></i
               ></a>
             </div>
@@ -223,45 +238,59 @@
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="./services.html" class="text-reset">Services</a>
+            ><a href="./pages/services.html" class="text-reset">Services</a>
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="./contact.html" class="text-reset">Me contacter</a>
+            ><a href="./pages/contact.html" class="text-reset">Me contacter</a>
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="./legal.html" class="text-reset">Mentions légales</a>
+            ><a href="./pages/legal.html" class="text-reset"
+              >Mentions légales</a
+            >
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 p-4">
           <h4>Mes dernières réalisations</h4>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Fresh food</a>
+            ><a href="./pages/portfolio.html#freshfood" class="text-reset"
+              >Fresh food</a
+            >
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Restaurant Akira</a>
+            ><a href="./pages/portfolio.html#akira" class="text-reset"
+              >Restaurant Akira</a
+            >
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Espace bien-être</a>
+            ><a href="./pages/portfolio.html#espace" class="text-reset"
+              >Espace bien-être</a
+            >
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 p-4">
           <h4>Mes derniers articles</h4>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Coder son site en HTML/CSS</a>
+            ><a href="./pages/blog.html#coder" class="text-reset"
+              >Coder son site en HTML/CSS</a
+            >
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Vendre ses produits sur le web</a>
+            ><a href="./pages/blog.html#croissance" class="text-reset"
+              >Vendre ses produits sur le web</a
+            >
           </div>
           <div>
             <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
-            ><a href="" class="text-reset">Se positionner sur Google</a>
+            ><a href="./pages/blog.html#google" class="text-reset"
+              >Se positionner sur Google</a
+            >
           </div>
         </div>
       </div>
