@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href=../images/favicon.png" type="image/x-icon" />
+
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    />
 
     <link rel="stylesheet" href="../css/style.css" />
 
@@ -62,10 +67,24 @@
         </div>
       </nav>
     </header>
-    <div class="mb-5" id="root"></div>
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="../javascript/index-BeVCOL4z.js"></script>
+    <button class="btn btn-primary m-5" id="load-react-app">
+      Voir mon profile github
+    </button>
+    <div class="m-5" id="react-app-container"></div>
+    <script>
+      document
+        .getElementById("load-react-app")
+        .addEventListener("click", function () {
+          const container = document.getElementById("react-app-container");
+          container.innerHTML = `<iframe src="https://codesandbox.io/p/github/BLaeya/app-react-john-doe/main?import=true&embed=1"
+     style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="BLaeya/app-react-john-doe/main"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>`;
+        });
+    </script>
+
     <footer class="container-fluid bg-dark bg-opacity-10">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
         <div class="col-12 col-sm-6 col-lg-3 p-4">
