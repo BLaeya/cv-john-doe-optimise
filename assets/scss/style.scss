@@ -1,6 +1,6 @@
 @import "variables_overrides.scss";
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 a {
   text-decoration: none;
@@ -58,5 +58,31 @@ strong {
 @media (min-width: 768px) {
   .ratio-4x3 {
     max-height: 270px; /* Ajustez cette valeur selon vos besoins */
+  }
+}
+
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 0;
+  width: 0;
+  padding: 0;
+  border-top: 0;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid #0d6efd;
+  border-left: 20px solid transparent;
+  cursor: pointer;
+  display: none;
+  opacity: 0.7;
+
+  &:hover {
+    height: 0;
+    width: 0;
+    padding: 0;
+    border-top: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid #298eff;
+    border-left: 20px solid transparent;
   }
 }
