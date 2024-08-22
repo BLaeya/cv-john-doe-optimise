@@ -3,10 +3,323 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/5aa7664434.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>John Doe - Développeur Web | Portfoilio et services</title>
+    <meta
+      name="descritpion"
+      content="Découvrez le portfolio de John Doe, développeur web spécialisé en création de sites internet et applications web. Consultez ses compétences et services."
+    />
   </head>
   <body>
-    <h1>Hello world</h1>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1 ps-5">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <h2 class="navbar-text text-uppercase fw-600 text-light">
+              John <span class="bg-primary bg-gradient rounded-3 p-1">Doe</span>
+            </h2>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end pe-5"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="./assets/pages/services.html"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="./assets/pages/portfolio.html"
+                  >Réalisations</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="./assets/pages/blog.html">Blog</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="./assets/pages/contact.html"
+                  >Me contacter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="pb-3">
+      <section class="position-relative">
+        <picture>
+          <source
+            srcset="./assets/images/hero-bg.jpg"
+            media="(min-width: 992px)"
+          />
+          <source
+            srcset="./assets/images/hero-bg-tablette.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="./assets/images/hero-bg-mobile.jpg"
+            alt="John Doe code"
+            class="img-fluid"
+          />
+        </picture>
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div
+          class="position-absolute top-50 start-50 translate-middle text-center"
+        >
+          <h1 class="text-white mb-4">Bonjour, je suis John Doe</h1>
+          <h2 class="text-white mb-4">Développeur web full-stack</h2>
+          <a href="#about" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 rounded-1 shadow m-5">
+          <div class="col-12 col-md-6 p-4">
+            <h3 class="border-bottom border-primary border-2 p-2" id="about">
+              &Agrave; propos
+            </h3>
+            <p>
+              Passionné par l'informatique et les nouvelles technologies, j'ai
+              suivi une formation d'<strong>intégrateur-développeur web</strong>
+              au CEF. Au cours de cette formation, j'ai pu acquérir des bases
+              solides pour travailler dans le domaine du
+              <strong>développement web.</strong>
+            </p>
+            <p>
+              Basé à Lyon, je suis en recherche d'une alternace au sein d'une
+              agence digitale pour consolider ma formation
+              <strong>de développeur full-stack.</strong>
+            </p>
+            <p>
+              J'accorde une attention particulière à la qualité du code que
+              j'écris et je respecte les bonnes pratiques du web.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 p-4">
+            <img
+              src="./assets/images/john-doe-about.jpg"
+              class="rounded-1 img-fluid"
+              alt="John Doe"
+            />
+            <div>
+              <h4>Mes Compétences</h4>
+              <p class="my-2">HTML5 90%</p>
+              <div class="progress mb-3">
+                <div
+                  class="progress-bar bg-danger w-90"
+                  role="progressbar"
+                  aria-label="html-bar"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 90%"
+                ></div>
+              </div>
+              <p class="my-2">CSS3 80%</p>
+              <div class="progress mb-3">
+                <div
+                  class="progress-bar bg-info w-80"
+                  role="progressbar"
+                  aria-label="html-bar"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 80%"
+                ></div>
+              </div>
+              <p class="my-2">Javascript 70%</p>
+              <div class="progress mb-3">
+                <div
+                  class="progress-bar bg-warning w-70"
+                  role="progressbar"
+                  aria-label="html-bar"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 70%"
+                ></div>
+              </div>
+              <p class="my-2">PHP 60%</p>
+              <div class="progress mb-3">
+                <div
+                  class="progress-bar bg-success w-60"
+                  role="progressbar"
+                  aria-label="html-bar"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 60%"
+                ></div>
+              </div>
+              <p class="my-2">REACT 50%</p>
+              <div class="progress mb-3">
+                <div
+                  class="progress-bar bg-primary w-50"
+                  role="progressbar"
+                  aria-label="html-bar"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 50%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid bg-dark bg-opacity-10 mt-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col-12 col-sm-6 col-lg-3 p-4">
+          <h4>John Doe</h4>
+          <p class="text-capitalize m-0">
+            40 rue laure Diebold <br />69009 Lyon, France
+          </p>
+          <a href="tel:+33660504030" class="pb-2 p-0 text-reset"
+            >Téléphone: 06 60 50 40 30</a
+          >
+          <div class="row mt-2">
+            <div class="d-flex align-items-center">
+              <a
+                href="https://github.com/github-john-doe"
+                class="mx-2 text-reset"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-github fa-xl"></i
+              ></a>
+              <a
+                href="https://x.com/github-john-doe"
+                class="mx-2 text-reset"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-x-twitter fa-xl"></i
+              ></a>
+              <a
+                href="https://linkedin.com/in/github-john-doe"
+                class="mx-2 text-reset"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-linkedin fa-xl"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 p-4">
+          <h4>Liens utiles</h4>
+          <div>
+            <i class="fa-solid fa-chevron-right fa-sm text-primary me-1"></i
+            ><a href="./index.html" class="text-reset">Accueil</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
+            ><a href="#about" class="text-reset">&Agrave; propos</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
+            ><a href="./assets/pages/services.html" class="text-reset"
+              >Services</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
+            ><a href="./assets/pages/contact.html" class="text-reset"
+              >Me contacter</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
+            ><a href="./assets/pages/legal.html" class="text-reset"
+              >Mentions légales</a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 p-4">
+          <h4>Mes dernières réalisations</h4>
+          <div>
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
+            ><a
+              href="./assets/pages/portfolio.html#freshfood"
+              class="text-reset"
+              >Fresh food</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
+            ><a href="./assets/pages/portfolio.html#akira" class="text-reset"
+              >Restaurant Akira</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
+            ><a href="./assets/pages/portfolio.html#espace" class="text-reset"
+              >Espace bien-être</a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 p-4">
+          <h4>Mes derniers articles</h4>
+          <div>
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
+            ><a href="./assets/pages/blog.html#coder" class="text-reset"
+              >Coder son site en HTML/CSS</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
+            ><a href="./assets/pages/blog.html#croissance" class="text-reset"
+              >Vendre ses produits sur le web</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-chevron-right text-primary fa-sm me-1"></i
+            ><a href="./assets/pages/blog.html#google" class="text-reset"
+              >Se positionner sur Google</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row bg-dark py-3">
+        <p class="text-light text-center m-0">&copy; Designed by John Doe</p>
+      </div>
+      <div class="row py-2"></div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/javascript/script.js"></script>
   </body>
 </html>

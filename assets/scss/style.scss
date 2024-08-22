@@ -1,0 +1,88 @@
+@import "variables_overrides.scss";
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1e1e1e;
+}
+strong {
+  color: black;
+}
+
+.navbar-text a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.services:hover {
+  i {
+    color: #cde1f8;
+  }
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.overlay-contact {
+  background-image: url(../images/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 105, 255, 0.5);
+    z-index: 1;
+  }
+}
+.contact {
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .ratio-4x3 {
+    max-height: 270px; /* Ajustez cette valeur selon vos besoins */
+  }
+}
+
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 0;
+  width: 0;
+  padding: 0;
+  border-top: 0;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid #0d6efd;
+  border-left: 20px solid transparent;
+  cursor: pointer;
+  display: none;
+  opacity: 0.8;
+
+  &:hover {
+    height: 0;
+    width: 0;
+    padding: 0;
+    border-top: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid #298eff;
+    border-left: 20px solid transparent;
+  }
+}
